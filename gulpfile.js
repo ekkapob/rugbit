@@ -15,10 +15,16 @@ gulp.task('html', function(){
 		.pipe(livereload());
 });
 
+gulp.task('js', function(){
+	gulp.src(['./public/js/*.js'])
+		.pipe(livereload());
+});
+
 gulp.task('watch', function(){
 	livereload.listen();
 	gulp.watch(['./public/css/stylus/*.styl'], ['css']);
 	gulp.watch(['./public/*.html'], ['html']);
+	gulp.watch(['./public/js/*.js'], ['js']);
 });
 
 gulp.task('default', ['css', 'watch'], function(){

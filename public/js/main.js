@@ -84,18 +84,16 @@ var PostImg = React.createClass({
 		var authorImage = "images/avatar/" + this.props.post.author.avatar;
 		return (
 			<div className="media-left post-img-container">
-				<div className="media-left post-img-container">
-					<div className="post-bubble" title={this.props.post.jobtype}>
-						<div className="icon-speech shadow"></div>	
-						<div className="icon-speech">
-							<div className={postCommentIcon}></div>
-						</div>
+				<div className="post-bubble" title={this.props.post.jobtype}>
+					<div className="icon-speech shadow"></div>	
+					<div className="icon-speech">
+						<div className={postCommentIcon}></div>
 					</div>
-					<img className="img-circle" 
-						src={authorImage} 
-						alt="something" 
-						title={this.props.post.author.name} />
 				</div>
+				<img className="img-circle" 
+					src={authorImage} 
+					alt="something" 
+					title={this.props.post.author.name} />
 			</div>
 		);
 	}

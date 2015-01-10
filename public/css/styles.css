@@ -35,6 +35,7 @@
 .container-main {
   background-color: #fff;
   padding-top: 40px;
+  padding-right: 0px;
 }
 .media-left {
   padding-right: 0;
@@ -128,6 +129,42 @@
 }
 .post .post-pay .icon-stack {
   color: #f9d829;
+}
+#right-container {
+  padding: 0px;
+}
+#recommended-job {
+  padding: 5px 10px;
+  background-color: #f8f7ff;
+  border-right: 2px solid #e0dfea;
+}
+#recommended-job .title {
+  text-align: center;
+}
+.matched-job .media-heading {
+  margin-bottom: 0px;
+}
+.matched-job .media-body {
+  text-align: right;
+}
+.matched-job .author-img {
+  width: 50px;
+  top: 5px;
+  position: relative;
+}
+.matched-job .media-heading {
+  font-size: 15px;
+  font-weight: bold;
+}
+.matched-job .job-description {
+  font-size: 12px;
+  line-height: 1.3em;
+}
+.matched-job .tags {
+  font-size: 11px;
+  margin-bottom: 5px;
+  font-style: italic;
+  color: #958cf5;
 }
 body {
   background-color: #ecebf7;

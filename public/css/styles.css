@@ -149,8 +149,7 @@
 }
 .matched-job .author-img {
   width: 50px;
-  top: 5px;
-  position: relative;
+  margin-top: 5px;
 }
 .matched-job .media-heading {
   font-size: 15px;
@@ -165,6 +164,33 @@
   margin-bottom: 5px;
   font-style: italic;
   color: #958cf5;
+}
+.matched-job .icon-speech.shadow {
+  color: rgba(171,171,171,0.25);
+  font-size: 42px;
+}
+.matched-job .icon-speech {
+  font-size: 40px;
+  position: absolute;
+  top: -5px;
+  right: -35px;
+  color: #a69efc;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.matched-job .post-image-container {
+  position: relative;
+}
+.matched-job .percent-match {
+  right: -35px;
+  position: absolute;
+  top: 5px;
+  font-size: 14px;
+  color: #fff;
 }
 body {
   background-color: #ecebf7;

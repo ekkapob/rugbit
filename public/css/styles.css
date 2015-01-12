@@ -161,6 +161,7 @@
 #recommended-job .matched-job-container {
   padding-left: 15px;
   padding-top: 10px;
+  padding-right: 5px;
 }
 .matched-job .media-heading {
   margin-bottom: 0px;

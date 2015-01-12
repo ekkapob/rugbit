@@ -170,13 +170,12 @@
   font-weight: bold;
 }
 .matched-job .job-description {
+  margin-top: 5px;
   font-size: 11px;
   line-height: 1.3em;
-  text-align: left;
 }
 .matched-job .tags {
   font-size: 10px;
-  margin-bottom: 5px;
   font-style: italic;
   color: #958cf5;
 }

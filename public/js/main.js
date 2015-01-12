@@ -3,7 +3,7 @@ var posts = [
 		title: "This is the heading",
 		tags: ["programming", "design", ".NET"],
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...",
-		createdDate: "Jan 5, 2015",
+		postDate: "Jan 5, 2015",
 		budget: "50,000",
 		dollar: "THB",
 		jobtype: "coding",
@@ -15,8 +15,8 @@ var posts = [
 	{
 		title: "This is the heading",
 		tags: ["programming", "design", ".NET"],
-		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...",
-		createdDate: "Jan 5, 2015",
+		description: "123Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...",
+		postDate: "Jan 5, 2015",
 		budget: "5,000",
 		dollar: "THB",
 		jobtype: "design",
@@ -29,7 +29,7 @@ var posts = [
 		title: "This is the heading",
 		tags: ["programming", "design", ".NET"],
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...",
-		createdDate: "Jan 5, 2015",
+		postDate: "Jan 5, 2015",
 		budget: "5,000",
 		dollar: "THB",
 		jobtype: "design",
@@ -42,7 +42,7 @@ var posts = [
 		title: "This is the heading",
 		tags: ["programming", "design", ".NET"],
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...",
-		createdDate: "Jan 5, 2015",
+		postDate: "Jan 5, 2015",
 		budget: "5,000",
 		dollar: "THB",
 		jobtype: "design",
@@ -55,7 +55,7 @@ var posts = [
 		title: "This is the heading",
 		tags: ["programming", "design", ".NET"],
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...",
-		createdDate: "Jan 5, 2015",
+		postDate: "Jan 5, 2015",
 		budget: "5,000",
 		dollar: "THB",
 		jobtype: "design",
@@ -67,7 +67,7 @@ var posts = [
 	{
 		title: "This is the heading",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...",
-		createdDate: "Jan 5, 2015",
+		postDate: "Jan 5, 2015",
 		budget: "5,000",
 		dollar: "THB",
 		jobtype: "design",
@@ -141,15 +141,11 @@ var PostBody = React.createClass({
 							<a href="#">{this.props.post.author.name}</a>
 						</span>
 					</span>
-					<span className="post-date">{this.props.post.createdDate}</span>
+					<span className="post-date">{this.props.post.postDate}</span>
 					<div className="post-pay">{this.props.post.budget} {this.props.post.dollar} {(this.props.post.budget ? <span className="icon-stack"></span> : false)}</div>
 				</h3>
 				<PostTagContainer tags={this.props.post.tags} />
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...
-				</p>
+				<p>{this.props.post.description}</p>
 			</div>
 		);
 	}

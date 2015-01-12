@@ -1,12 +1,13 @@
-.navbar a {
-  color: #434343;
-}
 .navbar {
   background: #fff;
   height: 50px;
   border-radius: 0;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
   margin-bottom: 0px;
+  z-index: 100;
+}
+.navbar a {
+  color: #434343;
 }
 .navbar-brand {
   font-family: Arial;
@@ -36,6 +37,7 @@
   background-color: #fff;
   padding-top: 40px;
   padding-right: 0px;
+  position: relative;
 }
 .media-left {
   padding-right: 0;
@@ -131,15 +133,28 @@
   color: #f9d829;
 }
 #right-container {
-  padding: 0px;
+  padding-right: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 26%;
 }
 #recommended-job {
-  padding: 5px 10px;
+  padding: 5px 10px 10px 5px;
   background-color: #f8f7ff;
   border-right: 2px solid #e0dfea;
 }
 #recommended-job .title {
   text-align: center;
+}
+#recommended-job hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 90%;
+}
+#recommended-job .matched-job-container {
+  padding-left: 15px;
+  padding-top: 10px;
 }
 .matched-job .media-heading {
   margin-bottom: 0px;
@@ -152,15 +167,15 @@
   margin-top: 5px;
 }
 .matched-job .media-heading {
-  font-size: 15px;
   font-weight: bold;
 }
 .matched-job .job-description {
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.3em;
+  text-align: left;
 }
 .matched-job .tags {
-  font-size: 11px;
+  font-size: 10px;
   margin-bottom: 5px;
   font-style: italic;
   color: #958cf5;
@@ -186,11 +201,19 @@
   position: relative;
 }
 .matched-job .percent-match {
-  right: -35px;
+  right: -33px;
   position: absolute;
-  top: 5px;
-  font-size: 14px;
+  top: 7px;
+  font-size: 13px;
   color: #fff;
+}
+.matched-job p {
+  margin-bottom: 2px;
+}
+.matched-job .post-date {
+  font-size: 10px;
+  font-style: italic;
+  color: #ccc;
 }
 body {
   background-color: #ecebf7;

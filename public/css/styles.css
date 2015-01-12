@@ -42,6 +42,9 @@
 .media-left {
   padding-right: 0;
 }
+#home-post-container hr:last-child {
+  display: none;
+}
 .post {
   position: relative;
 }
@@ -140,7 +143,7 @@
   width: 26%;
 }
 #recommended-job {
-  padding: 5px 10px 10px 5px;
+  padding: 15px 10px 15px 5px;
   background-color: #f8f7ff;
   border-right: 2px solid #e0dfea;
 }
@@ -151,6 +154,9 @@
   margin-top: 15px;
   margin-bottom: 15px;
   width: 90%;
+}
+#recommended-job hr:last-child {
+  display: none;
 }
 #recommended-job .matched-job-container {
   padding-left: 15px;

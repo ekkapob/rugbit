@@ -1,3 +1,6 @@
+.avatar {
+  border: 2px solid rgba(93,90,126,0.15);
+}
 .navbar {
   background: #fff;
   height: 50px;
@@ -52,10 +55,10 @@
   margin-right: 2px;
 }
 .post .post-bubble .icon-speech.shadow {
-  left: -41px;
-  color: rgba(171,171,171,0.25);
-  top: -12px;
-  font-size: 49px;
+  left: -45px;
+  color: rgba(93,90,126,0.4);
+  top: -15px;
+  font-size: 52px;
 }
 .post .post-bubble .icon-speech {
   color: #fff;
@@ -140,12 +143,12 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 26%;
+  width: 28%;
 }
 #recommended-job {
   padding: 15px 10px 15px 5px;
   background-color: #f8f7ff;
-  border-right: 2px solid #e0dfea;
+  border-right: 2px solid #9f98ed;
 }
 #recommended-job .title {
   text-align: center;
@@ -187,21 +190,29 @@
   color: #958cf5;
 }
 .matched-job .icon-speech.shadow {
-  color: rgba(171,171,171,0.25);
+  color: rgba(93,90,126,0.4);
   font-size: 42px;
+  top: -4px;
+  right: -38px;
 }
 .matched-job .icon-speech {
   font-size: 40px;
   position: absolute;
   top: -5px;
   right: -35px;
-  color: #a69efc;
+  color: #c1bcff;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: "FlipH";
+}
+.matched-job .icon-speech.important {
+  color: #fc9e9e;
+}
+.matched-job .icon-speech.trivial {
+  color: #ccc;
 }
 .matched-job .post-image-container {
   position: relative;
@@ -222,7 +233,7 @@
   color: #ccc;
 }
 body {
-  background-color: #ecebf7;
+  background-color: #5d5a7e;
 }
 @media (min-width: 768px) {
   .navbar-nav>li {

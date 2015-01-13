@@ -18,7 +18,7 @@ var jobs = [
 		percentMatched: 100,
 		author: {
 			name: "Peter",
-			avatar: "avatar-bart.jpg"
+			avatar: "homer.jpg"
 		}
 	},
 	{
@@ -49,6 +49,7 @@ var Job = React.createClass({
 	render: function(){
 		var tags = this.props.job.tags ? <div className="tags">{this.props.job.tags.join(", ")}</div> : '';
 		var avartar = "images/avatar/" + this.props.job.author.avatar;
+		var matchedLevel = (this.props.job.percentMatched >= 80)? 'important' : '';
 
 		return (
 			<div className="matched-job media">
@@ -61,10 +62,10 @@ var Job = React.createClass({
 				<div className="media-right post-image-container" href="#">
 					<div className="matched-percent-bubble">
 						<div className="icon-speech shadow"></div>
-						<div className="icon-speech"></div>
+						<div className={"icon-speech " + matchedLevel}></div>
 						<div className="percent-match">{this.props.job.percentMatched}%</div>
 					</div>
-					<img className="author-img img-circle" src={avartar} />
+					<img className="author-img avatar img-circle" src={avartar} />
 				</div>
 			</div>
 		);

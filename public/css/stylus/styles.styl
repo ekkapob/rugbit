@@ -1,12 +1,16 @@
 black = #434343
 grey	= #7A7A7A
-site-background = #ECEBF7
+site-background = #5D5A7E //#ECEBF7
 lightgrey = #CCC
 lightgrey-100 = #EFEFEF
 purple = #415ADA
 darkpurple = #8491E4
 gold = #F9D829
-lightpurple = #D1D7FF
+lightpurple = #C1BCFF
+orange = #FC9E9E
+
+.avatar
+	border 2px solid rgba(93, 90, 126, 0.15)
 
 .navbar
 	background	white
@@ -61,10 +65,10 @@ lightpurple = #D1D7FF
 		margin-right 2px
 	.post-bubble
 		.icon-speech.shadow
-			left -41px
-			color rgba(171,171,171,0.25)
-			top -12px
-			font-size 49px
+			left -45px
+			color rgba(93, 90, 126, 0.4) //rgba(171,171,171,0.25)
+			top -15px
+			font-size 52px
 		.icon-speech
 			color white
 			font-size: 48px
@@ -130,12 +134,12 @@ lightpurple = #D1D7FF
 	position absolute
 	top 0
 	right 0
-	width 26%
+	width 28%
 	
 #recommended-job
 	padding 15px 10px 15px 5px
 	background-color #F8F7FF
-	border-right 2px solid #E0DFEA
+	border-right 2px solid #9F98ED
 	.title
 		text-align center
 	hr
@@ -177,15 +181,21 @@ flip-img = @block {
 		font-style italic
 		color rgb(149,140,245)
 	.icon-speech.shadow
-		color rgba(171,171,171,0.25)
+		color rgba(93, 90, 126, 0.4) //rgba(171,171,171,0.25)
 		font-size 42px
+		top -4px
+		right -38px
 	.icon-speech
 		font-size 40px
 		position absolute
 		top -5px
 		right -35px
-		color #A69EFC
+		color #C1BCFF
 		{flip-img}
+		&.important
+			color orange
+		&.trivial
+			color lightgrey
 	.post-image-container
 		position relative
 	.percent-match

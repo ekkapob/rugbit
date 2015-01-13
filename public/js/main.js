@@ -9,7 +9,7 @@ var posts = [
 		jobtype: "coding",
 		author: {
 			name: "homerman",
-			avatar: "avatar-bart.jpg"
+			avatar: "homer.jpg"
 		}
 	},
 	{
@@ -90,7 +90,7 @@ var PostImg = React.createClass({
 						<div className={postCommentIcon}></div>
 					</div>
 				</div>
-				<img className="img-circle" 
+				<img className="avatar img-circle" 
 					src={authorImage} 
 					alt="something" 
 					title={this.props.post.author.name} />

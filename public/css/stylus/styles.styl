@@ -5,11 +5,13 @@ lightgrey = #CCC
 lightgrey-100 = #EFEFEF
 purple = #415ADA
 darkpurple = #8491E4
+darkpurple-100 = #727DC0
 gold = #F9D829
 lightpurple = #C1BCFF
 orange = #FC9E9E
 white = #FDFDFD
 white-100 = #F7F7F7
+green = #00DA5E
 
 .avatar
 	border 2px solid rgba(93, 90, 126, 0.15)
@@ -218,11 +220,42 @@ body
 		z-index 100
 		a
 			color black
+	.top-right
+		float	right
+		padding-top 3px
+		#login-btn
+			margin-right 5px
+		.login-separator
+			margin 0 8px 0 0px
+			color #ABABAB
 
+#signup-btn
+	background darkpurple
+	color white
+	border-color #777499
+	border-bottom 2px solid site-background
+	&:hover
+		background-color darkpurple-100
+		border-color lightpurple
+
+.login-signup-container
+	margin-top 5px
+
+.loggedin-container
+	.avatar
+		height 42px
+		float right
+	.account-name
+		display	inline-block
+		font-size 11px
+		text-align right
+		margin-top 6px
+		margin-right 5px
+		.greeting
+			color green
+		
 footer
 	margin-top 20px
-	// a
-	// 	color white-100
 	&.container
 		padding 0
 	.navbar-header
@@ -243,12 +276,6 @@ footer
 		padding-right 10px
 		font-weight normal
 		color white-100
-			
-	
-	// .navbar-nav>li>a:first-child
-	// 	padding-left 0
-	// 	margin-left	0
-	
 
 @media (min-width 768px) 
 	.navbar-nav>li

@@ -236,6 +236,44 @@ body>.navbar {
 body>.navbar a {
   color: #434343;
 }
+body .top-right {
+  float: right;
+  padding-top: 3px;
+}
+body .top-right #login-btn {
+  margin-right: 5px;
+}
+body .top-right .login-separator {
+  margin: 0 8px 0 0px;
+  color: #ababab;
+}
+#signup-btn {
+  background: #8491e4;
+  color: #fdfdfd;
+  border-color: #777499;
+  border-bottom: 2px solid #5d5a7e;
+}
+#signup-btn:hover {
+  background-color: #727dc0;
+  border-color: #c1bcff;
+}
+.login-signup-container {
+  margin-top: 5px;
+}
+.loggedin-container .avatar {
+  height: 42px;
+  float: right;
+}
+.loggedin-container .account-name {
+  display: inline-block;
+  font-size: 11px;
+  text-align: right;
+  margin-top: 6px;
+  margin-right: 5px;
+}
+.loggedin-container .account-name .greeting {
+  color: #00da5e;
+}
 footer {
   margin-top: 20px;
 }

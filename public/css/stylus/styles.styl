@@ -1,6 +1,6 @@
 black = #434343
 grey	= #7A7A7A
-site-background = #5D5A7E //#ECEBF7
+site-background = #5D5A7E
 lightgrey = #CCC
 lightgrey-100 = #EFEFEF
 purple = #415ADA
@@ -16,8 +16,6 @@ green = #00DA5E
 .avatar
 	border 2px solid rgba(93, 90, 126, 0.15)
 
-
-	
 .navbar-brand
 	font-family	Arial
 	font-weight	bold
@@ -63,7 +61,7 @@ green = #00DA5E
 	.post-bubble
 		.icon-speech.shadow
 			left -45px
-			color rgba(93, 90, 126, 0.4) //rgba(171,171,171,0.25)
+			color rgba(93, 90, 126, 0.4)
 			top -15px
 			font-size 52px
 		.icon-speech
@@ -134,9 +132,7 @@ green = #00DA5E
 	width 28%
 	
 #recommended-job
-	padding 15px 10px 15px 5px
-	background-color #F8F7FF
-	border-right 2px solid #9F98ED
+	box-shadow 0px 2px 0px rgba(187, 187, 187, 0.5)
 	.title
 		text-align center
 	hr
@@ -145,10 +141,6 @@ green = #00DA5E
 		width 90%
 	hr:last-child
 		display none
-	.matched-job-container
-		padding-left 15px
-		padding-top 10px
-		padding-right	5px
 
 flip-img = @block {
 	-moz-transform: scaleX(-1)
@@ -160,8 +152,19 @@ flip-img = @block {
 }
 
 .matched-job
+	&.media
+		background rgb(244, 238, 253)
+		padding 10px
+		border-radius 0
+		border-bottom 1px solid #D6D2FF
+		border-top 1px solid white
+		border-left 1px solid rgba(219, 219, 219, 0.5)
+		margin-top 0
+		&:first-child
+			padding-top 20px
 	.media-heading
 		margin-bottom 0
+		padding 0 0 2px
 	.media-body
 		text-align right
 	.author-img
@@ -176,9 +179,9 @@ flip-img = @block {
 	.tags
 		font-size 10px
 		font-style italic
-		color rgb(149,140,245)
+		color #958CF5
 	.icon-speech.shadow
-		color rgba(93, 90, 126, 0.4) //rgba(171,171,171,0.25)
+		color rgba(93, 90, 126, 0.4)
 		font-size 42px
 		top -4px
 		right -38px
@@ -207,7 +210,6 @@ flip-img = @block {
 		font-size 10px
 		font-style italic
 		color lightgrey
-
 
 body
 	background-color site-background

@@ -136,9 +136,7 @@
   width: 28%;
 }
 #recommended-job {
-  padding: 15px 10px 15px 5px;
-  background-color: #f8f7ff;
-  border-right: 2px solid #9f98ed;
+  box-shadow: 0px 2px 0px rgba(187,187,187,0.5);
 }
 #recommended-job .title {
   text-align: center;
@@ -151,13 +149,21 @@
 #recommended-job hr:last-child {
   display: none;
 }
-#recommended-job .matched-job-container {
-  padding-left: 15px;
-  padding-top: 10px;
-  padding-right: 5px;
+.matched-job.media {
+  background: #f4eefd;
+  padding: 10px;
+  border-radius: 0;
+  border-bottom: 1px solid #d6d2ff;
+  border-top: 1px solid #fdfdfd;
+  border-left: 1px solid rgba(219,219,219,0.5);
+  margin-top: 0;
+}
+.matched-job.media:first-child {
+  padding-top: 20px;
 }
 .matched-job .media-heading {
   margin-bottom: 0;
+  padding: 0 0 2px;
 }
 .matched-job .media-body {
   text-align: right;

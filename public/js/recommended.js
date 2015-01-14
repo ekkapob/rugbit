@@ -79,7 +79,7 @@ var Jobs = React.createClass({
 		if (this.props.jobs){
 			this.props.jobs.forEach(function(job){
 				jobs.push(<Job job={job} />);
-				jobs.push(<hr />);
+				//jobs.push(<hr />);
 			}.bind(this));
 		}
 
@@ -91,11 +91,13 @@ var Jobs = React.createClass({
 	}
 });
 
+// <h4 className="title">Top Jobs Matched</h4>
+
 var RecommendedJobs = React.createClass({
 	render: function(){
 		return (
 			<div id="recommended-job">
-				<h4 className="title">Top Jobs Matched</h4>
+				
 				<Jobs jobs={this.props.jobs}/>
 			</div>
 		);

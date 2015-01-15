@@ -3,10 +3,11 @@ grey	= #7A7A7A
 site-background = #5D5A7E
 lightgrey = #CCC
 lightgrey-100 = #EFEFEF
+darkgrey = #8A8998
 purple = #415ADA
 darkpurple = #8491E4
 darkpurple-100 = #727DC0
-gold = #F9D829
+gold = #E0C634
 lightpurple = #C1BCFF
 orange = #FC9E9E
 white = #FDFDFD
@@ -94,12 +95,12 @@ green = #00DA5E
 				color purple
 	.media-body
 		padding-left 20px
-	.post-date
-		&:before
-			content: ' \2014 \00A0'
-		color lightgrey
-		font-size 12px
-		font-weight normal
+	// .post-date
+	// 	&:before
+	// 		content: ' \2014 \00A0'
+	// 	color lightgrey
+	// 	font-size 12px
+	// 	font-weight normal
 	.post-author-container
 		font-style italic
 		.post-author a
@@ -124,6 +125,13 @@ green = #00DA5E
 		.icon-stack
 			color gold
 
+.post-date
+		&:before
+			content: ' \2014 \00A0'
+		color lightgrey
+		font-size 12px
+		font-weight normal
+		
 #right-container
 	padding-right 0
 	position absolute
@@ -132,7 +140,8 @@ green = #00DA5E
 	width 28%
 	
 #recommended-job
-	box-shadow 0px 2px 0px rgba(187, 187, 187, 0.5)
+	box-shadow 0px 2px 2px rgba(0, 0, 0, 0.6)
+	margin-right -10px
 	.title
 		text-align center
 	hr
@@ -141,6 +150,11 @@ green = #00DA5E
 		width 90%
 	hr:last-child
 		display none
+	.box-triangle-background
+		border-top 10px solid #2C2C2C
+		border-right 10px solid transparent
+		float right
+		margin-top 1px
 
 flip-img = @block {
 	-moz-transform: scaleX(-1)
@@ -153,35 +167,35 @@ flip-img = @block {
 
 .matched-job
 	&.media
-		background rgb(244, 238, 253)
+		background #525066
 		padding 10px
 		border-radius 0
-		border-bottom 1px solid #D6D2FF
-		border-top 1px solid white
-		border-left 1px solid rgba(219, 219, 219, 0.5)
+		border-bottom 1px solid #3F3D4F
+		border-top 1px solid #6A6884
 		margin-top 0
 		&:first-child
 			padding-top 20px
 	.media-heading
 		margin-bottom 0
 		padding 0 0 2px
+		color lightpurple
+		font-size 15px
 	.media-body
 		text-align right
 	.author-img
 		width 50px
 		margin-top 5px
-	.media-heading
-		font-weight bold
 	.job-description
 		margin-top 5px
-		font-size 11px
-		line-height 1.3em
+		font-size 12px
+		line-height 1.5em
+		color white
 	.tags
 		font-size 10px
 		font-style italic
-		color #958CF5
+		color darkgrey
 	.icon-speech.shadow
-		color rgba(93, 90, 126, 0.4)
+		color #46445A
 		font-size 42px
 		top -4px
 		right -38px
@@ -190,7 +204,7 @@ flip-img = @block {
 		position absolute
 		top -5px
 		right -35px
-		color #C1BCFF
+		color lightpurple
 		{flip-img}
 		&.important
 			color orange
@@ -209,8 +223,8 @@ flip-img = @block {
 	.post-date
 		font-size 10px
 		font-style italic
-		color lightgrey
-
+		color darkgrey
+		
 body
 	background-color site-background
 	&>.navbar
@@ -278,6 +292,9 @@ footer
 		padding-right 10px
 		font-weight normal
 		color white-100
+	.nav-menu-selected
+			&:after
+				display none
 
 @media (min-width 768px) 
 	.navbar-nav>li

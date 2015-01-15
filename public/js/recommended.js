@@ -35,7 +35,18 @@ var jobs = [
 	{
 		title: "Need rubyist!",
 		tags: ["programming", "design", "code", "transport"],
-		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et",
+		description: "Freelancer iOS App is here! Stay in touch with your contacts, send instant message notifications and even award or accept projects on the go.",
+		postDate: "Jan 5, 2015",
+		percentMatched: 80,
+		author: {
+			name: "Peter",
+			avatar: "avatar-bart.jpg"
+		}
+	},
+	{
+		title: "Need rubyist!",
+		tags: ["programming", "design", "code", "transport"],
+		description: "Freelancer iOS App is here! Stay in touch with your contacts, send instant message notifications and even award or accept projects on the go.",
 		postDate: "Jan 5, 2015",
 		percentMatched: 80,
 		author: {
@@ -56,8 +67,8 @@ var Job = React.createClass({
 				<div className="media-body">
 					<h5 className="media-heading">{this.props.job.title}</h5>
 					{tags}
-					<p className="job-description">{this.props.job.description}</p>
-					<div className="post-date">{this.props.job.postDate}</div>
+					<p className="job-description">{this.props.job.description}<span className="post-date"> {this.props.job.postDate}</span>
+					</p>
 				</div>
 				<div className="media-right post-image-container" href="#">
 					<div className="matched-percent-bubble">
@@ -71,6 +82,8 @@ var Job = React.createClass({
 		);
 	}
 });
+
+// <div className="post-date">{this.props.job.postDate}</div>
 
 var Jobs = React.createClass({
 	render: function(){
@@ -97,8 +110,8 @@ var RecommendedJobs = React.createClass({
 	render: function(){
 		return (
 			<div id="recommended-job">
-				
 				<Jobs jobs={this.props.jobs}/>
+				<div className="box-triangle-background"></div>
 			</div>
 		);
 	}

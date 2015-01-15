@@ -90,14 +90,6 @@
 .post .media-body {
   padding-left: 20px;
 }
-.post .post-date {
-  color: #ccc;
-  font-size: 12px;
-  font-weight: normal;
-}
-.post .post-date:before {
-  content: ' \2014 \00A0';
-}
 .post .post-author-container {
   font-style: italic;
 }
@@ -126,7 +118,15 @@
   font-weight: normal;
 }
 .post .post-pay .icon-stack {
-  color: #f9d829;
+  color: #e0c634;
+}
+.post-date {
+  color: #ccc;
+  font-size: 12px;
+  font-weight: normal;
+}
+.post-date:before {
+  content: ' \2014 \00A0';
 }
 #right-container {
   padding-right: 0;
@@ -136,7 +136,8 @@
   width: 28%;
 }
 #recommended-job {
-  box-shadow: 0px 2px 0px rgba(187,187,187,0.5);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.6);
+  margin-right: -10px;
 }
 #recommended-job .title {
   text-align: center;
@@ -149,13 +150,18 @@
 #recommended-job hr:last-child {
   display: none;
 }
+#recommended-job .box-triangle-background {
+  border-top: 10px solid #2c2c2c;
+  border-right: 10px solid transparent;
+  float: right;
+  margin-top: 1px;
+}
 .matched-job.media {
-  background: #f4eefd;
+  background: #525066;
   padding: 10px;
   border-radius: 0;
-  border-bottom: 1px solid #d6d2ff;
-  border-top: 1px solid #fdfdfd;
-  border-left: 1px solid rgba(219,219,219,0.5);
+  border-bottom: 1px solid #3f3d4f;
+  border-top: 1px solid #6a6884;
   margin-top: 0;
 }
 .matched-job.media:first-child {
@@ -164,6 +170,8 @@
 .matched-job .media-heading {
   margin-bottom: 0;
   padding: 0 0 2px;
+  color: #c1bcff;
+  font-size: 15px;
 }
 .matched-job .media-body {
   text-align: right;
@@ -172,21 +180,19 @@
   width: 50px;
   margin-top: 5px;
 }
-.matched-job .media-heading {
-  font-weight: bold;
-}
 .matched-job .job-description {
   margin-top: 5px;
-  font-size: 11px;
-  line-height: 1.3em;
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #fdfdfd;
 }
 .matched-job .tags {
   font-size: 10px;
   font-style: italic;
-  color: #958cf5;
+  color: #8a8998;
 }
 .matched-job .icon-speech.shadow {
-  color: rgba(93,90,126,0.4);
+  color: #46445a;
   font-size: 42px;
   top: -4px;
   right: -38px;
@@ -226,7 +232,7 @@
 .matched-job .post-date {
   font-size: 10px;
   font-style: italic;
-  color: #ccc;
+  color: #8a8998;
 }
 body {
   background-color: #5d5a7e;
@@ -309,6 +315,9 @@ footer .navbar-nav>li>a {
   padding-right: 10px;
   font-weight: normal;
   color: #f7f7f7;
+}
+footer .nav-menu-selected:after {
+  display: none;
 }
 @media (min-width: 768px) {
   .navbar-nav>li {
